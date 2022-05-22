@@ -9,6 +9,8 @@ public class Candidate {
     private String formulaImage;
     private String groupImage;
 
+    private int votes;
+
     public Candidate(int id, String president, String formula, String presidentImage, String formulaImage, String groupImage) {
         this.id = id;
         this.president = president;
@@ -17,6 +19,7 @@ public class Candidate {
         this.formulaImage = formulaImage;
         this.groupImage = groupImage;
     }
+
 
     public Candidate() {
     }
@@ -67,5 +70,13 @@ public class Candidate {
 
     public void setGroupImage(String groupImage) {
         this.groupImage = groupImage;
+    }
+
+    public int getVotes() {
+        return votes;
+    }
+
+    public void setVotes(int votes) {
+        this.votes = votes;
     }
 }
