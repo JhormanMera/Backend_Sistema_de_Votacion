@@ -10,8 +10,7 @@ public class ApplicationConfig extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         Set<Class<?>> res = new HashSet<>();
-        // res.add(services.TestService.class);
-        // res.add(services.UserService.class);
+        res.add(services.CandidateService.class);
         return res;
     }
 }
