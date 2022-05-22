@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-@Path("candidate")
+@Path("Votacion")
 public class CandidateService {
 
     @GET

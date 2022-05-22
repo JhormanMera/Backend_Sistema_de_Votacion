@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18f86fa5-2ff4-4cf6-84ce-bc725273d605" name="Changes" comment="Starting the backend" />
+    <list default="true" id="18f86fa5-2ff4-4cf6-84ce-bc725273d605" name="Changes" comment="Starting the backend">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/CandidateService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mera/eclipse-workspace/Backend_Sistema_de_Votacion/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jhorman Mera/MyWorkspace/Backend_Sistema_de_Votacion&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
@@ -59,6 +63,8 @@
       <workItem from="1653184359236" duration="37000" />
       <workItem from="1653184609786" duration="445000" />
       <workItem from="1653186433293" duration="188000" />
+      <workItem from="1653240805924" duration="1076000" />
+      <workItem from="1653252719190" duration="1943000" />
     </task>
     <task id="LOCAL-00001" summary="Starting the backend">
       <created>1653178356197</created>
