@@ -22,17 +22,14 @@ public class CandidateService {
             candidates = provider.getCandidates();
             return Response.status(200).header("Access-Control-Allow-Origin","*").entity(candidates).build();
         } catch (SQLException ex) {
-            //ex.printStackTrace();
             Message m = new Message("SQL Exception", ex.getMessage());
             return Response.status(500).header("Access-Control-Allow-Origin","*").entity(m).build();
         } catch (ClassNotFoundException ex) {
-
             Message m = new Message("Class not found Except", ex.getMessage());
             return Response.status(500).header("Access-Control-Allow-Origin","*").entity(m).build();
         }
 
     }
-
     @PUT
     @Path("ActualizarVotos")
     @Produces("application/json")
@@ -43,7 +40,6 @@ public class CandidateService {
             Message m2 = new Message("SQL Sucess","Sucess");
             return Response.status(200).header("Access-Control-Allow-Origin","*").entity(m2).build();
         } catch (SQLException e) {
-
             Message m = new Message("SQL Exception", e.getMessage());
             return Response.status(500).header("Access-Control-Allow-Origin","*").entity(m).build();
         } catch (ClassNotFoundException ex) {
