@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18f86fa5-2ff4-4cf6-84ce-bc725273d605" name="Changes" comment="Starting the backend">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="18f86fa5-2ff4-4cf6-84ce-bc725273d605" name="Changes" comment="Starting the backend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +58,7 @@
       <workItem from="1653184113001" duration="179000" />
       <workItem from="1653184359236" duration="37000" />
       <workItem from="1653184609786" duration="445000" />
+      <workItem from="1653186433293" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="Starting the backend">
       <created>1653178356197</created>
