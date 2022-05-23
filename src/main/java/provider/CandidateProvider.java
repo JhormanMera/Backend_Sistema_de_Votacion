@@ -34,12 +34,12 @@ public class CandidateProvider {
         DbConn conn = new DbConn();
 
         String sql = "SELECT * FROM candidatesA00369206 WHERE id = $ID";
-        sql = sql.replace("$ID", ""+id);
+        sql = sql.replace("$ID",Integer.toString(id));
         System.out.println(sql);
         ResultSet results =  conn.getData(sql);
 
         sql="UPDATE candidatesA00369206 SET votes = $TOTAL WHERE id = $ID";
-        sql= sql.replace("$ID",  ""+id);
+        sql= sql.replace("$ID",Integer.toString(id));
         sql = sql.replace("$TOTAL",Integer.toString(results.getInt("totalVotes")+1));
         System.out.println(sql);
         conn.runQuery(sql);

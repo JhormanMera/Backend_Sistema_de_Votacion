@@ -31,9 +31,9 @@ public class CandidateService {
 
     }
     @PUT
-    @Path("ActualizarVotos")
+    @Path("ActualizarVotos/{id}")
     @Produces("application/json")
-    public Response updateVotes(int id){
+    public Response updateVotes(@PathParam("id") int id){
         CandidateProvider provider = new CandidateProvider();
         try {
             provider.updateTotalVotes(id);
