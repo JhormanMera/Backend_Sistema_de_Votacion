@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18f86fa5-2ff4-4cf6-84ce-bc725273d605" name="Changes" comment="Starting the backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/provider/CandidateProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/provider/CandidateProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/CandidateService.java" afterDir="false" />
     </list>
@@ -167,7 +168,13 @@
       <workItem from="1653240805924" duration="1076000" />
       <workItem from="1653252719190" duration="2547000" />
       <workItem from="1653256839098" duration="928000" />
-      <workItem from="1653266829972" duration="6032000" />
+      <workItem from="1653266829972" duration="6632000" />
+      <workItem from="1653326979608" duration="2318000" />
+      <workItem from="1653335169683" duration="748000" />
+      <workItem from="1653503141468" duration="3028000" />
+      <workItem from="1653506502179" duration="541000" />
+      <workItem from="1653507100512" duration="2255000" />
+      <workItem from="1653509464030" duration="402000" />
     </task>
     <task id="LOCAL-00001" summary="Starting the backend">
       <created>1653178356197</created>

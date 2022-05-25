@@ -1,5 +1,6 @@
 package services;
 
+import com.thetransactioncompany.cors.CORSFilter;
 import entity.Candidate;
 import provider.CandidateProvider;
 import model.Message;
@@ -10,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 @Path("Votacion")
-public class CandidateService {
+public class CandidateService extends CORSFilter {
 
     @GET
     @Path("Candidatos")
@@ -18,8 +19,7 @@ public class CandidateService {
     public Response getCandidates() {
         try {
             CandidateProvider provider = new CandidateProvider();
-            ArrayList<Candidate> candidates = null;
-            candidates = provider.getCandidates();
+            ArrayList<Candidate> candidates = provider.getCandidates();
             return Response.status(200).header("Access-Control-Allow-Origin","*").entity(candidates).build();
         } catch (SQLException ex) {
             Message m = new Message("SQL Exception", ex.getMessage());
@@ -31,12 +31,13 @@ public class CandidateService {
 
     }
     @PUT
-    @Path("ActualizarVotos/{id}")
+    @Path("Actualizar")
     @Produces("application/json")
-    public Response updateVotes(@PathParam("id") int id){
+    public Response updateVotes(Candidate candidate){
         CandidateProvider provider = new CandidateProvider();
         try {
-            provider.updateTotalVotes(id);
+            provider.updateTotalVotes(candidate);
+
             Message m2 = new Message("SQL Sucess","Sucess");
             return Response.status(200).header("Access-Control-Allow-Origin","*").entity(m2).build();
         } catch (SQLException e) {

@@ -25,23 +25,22 @@ public class CandidateProvider {
             Candidate candidate = new Candidate(id,president,formula,presidentImage,formulaImage,groupImage,votes);
             candidates.add(candidate);
         }
-        System.out.println(candidates.size());
         conn.close();
         return candidates;
     }
-    public void updateTotalVotes(int id) throws SQLException, ClassNotFoundException {
-        System.out.println(id);
+    public void updateTotalVotes(Candidate candidate) throws SQLException, ClassNotFoundException {
         DbConn conn = new DbConn();
 
         String sql = "SELECT * FROM candidatesA00369206 WHERE id = $ID";
-        sql = sql.replace("$ID",Integer.toString(id));
-        System.out.println(sql);
+        sql = sql.replace("$ID",Integer.toString(candidate.getId()));
         ResultSet results =  conn.getData(sql);
-
+        Candidate can = new Candidate();
+        while(results.next()){
+            can.setVotes(results.getInt("votes"));
+        }
         sql="UPDATE candidatesA00369206 SET votes = $TOTAL WHERE id = $ID";
-        sql= sql.replace("$ID",Integer.toString(id));
-        sql = sql.replace("$TOTAL",Integer.toString(results.getInt("totalVotes")+1));
-        System.out.println(sql);
+        sql= sql.replace("$ID",Integer.toString(candidate.getId()));
+        sql = sql.replace("$TOTAL",Integer.toString(can.getVotes()+1));
         conn.runQuery(sql);
         conn.close();
     }
