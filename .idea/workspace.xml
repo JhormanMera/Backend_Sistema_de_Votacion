@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18f86fa5-2ff4-4cf6-84ce-bc725273d605" name="Changes" comment="Starting the backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/CandidateService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,10 @@
       <workItem from="1653506502179" duration="541000" />
       <workItem from="1653507100512" duration="2255000" />
       <workItem from="1653509464030" duration="402000" />
-      <workItem from="1653509897492" duration="1270000" />
+      <workItem from="1653509897492" duration="1396000" />
+      <workItem from="1653513263335" duration="2869000" />
+      <workItem from="1653519105335" duration="214000" />
+      <workItem from="1653519347204" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="Starting the backend">
       <created>1653178356197</created>
